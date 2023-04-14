@@ -1,0 +1,44 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>Document</title>
+</head>    
+<body>
+
+
+
+<input type="text" id="n1" placeholder="n1">
+<input type="text" id="n2" placeholder="n2">
+<select id="op">
+       
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+
+
+</select>
+<button id="calcular">calcular</button>
+<script>
+    document.queryselector('#calcular').addEventListener('click'), ()=> {
+     const n1=document.querySelector('#n1').Value;
+     const n2=document.querySelector('#n2').Value;
+     const op=document.querySelector('#op').Value;
+     let r;
+         if(op == '+' ){
+            r=n1 + n2;
+         } else if( op == '-'){
+            r = n1 - n2;
+         } else if( op == '*'){
+            r = n1 *n2;
+         }else if( op == '/'){
+            r = n1 / n2;
+        console.log('r')    
+         };
+    }
+
+</script>
+</body> 
+</html>
